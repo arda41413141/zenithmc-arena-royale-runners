@@ -1,0 +1,21 @@
+
+name: CircleGame
+version: 1.0.0
+main: com.zenithmc.circlegame.CircleGamePlugin
+api-version: 1.19
+author: ZenithMC
+description: Minecraft Circle Game Plugin - Battle Royale tarzı oyun
+
+commands:
+  circlegame:
+    description: Circle Game komutları
+    usage: /circlegame <create|join|start|help>
+    aliases: [cg, circle]
+
+permissions:
+  circlegame.use:
+    description: Circle Game kullanma izni
+    default: true
+  circlegame.admin:
+    description: Circle Game admin izinleri
+    default: op
