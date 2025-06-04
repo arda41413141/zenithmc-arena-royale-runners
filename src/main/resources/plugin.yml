@@ -4,12 +4,12 @@ version: 1.0.0
 main: com.zenithmc.circlegame.CircleGamePlugin
 api-version: 1.19
 author: ZenithMC
-description: Minecraft Circle Game Plugin - Battle Royale tarzı oyun
+description: Minecraft Circle Game Plugin - Battle Royale tarzı oyun (Lobi Sistemi ile)
 
 commands:
   circlegame:
     description: Circle Game komutları
-    usage: /circlegame <create|join|start|help>
+    usage: /circlegame <lobby|leave|parkour|create|join|start|help>
     aliases: [cg, circle]
 
 permissions:

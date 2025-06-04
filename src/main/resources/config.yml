@@ -1,0 +1,42 @@
+
+# Circle Game Plugin Ayarları
+
+lobby:
+  # Minimum oyuncu sayısı (oyun başlamak için)
+  min-players: 6
+  # Maximum oyuncu sayısı
+  max-players: 18
+  # Countdown süresi (saniye)
+  countdown-time: 30
+  # Lobi spawn koordinatları
+  spawn:
+    world: "world"
+    x: 0
+    y: 100
+    z: 0
+
+parkour:
+  # Parkur ödülü
+  reward-item: GOLDEN_APPLE
+  # Parkur başlangıç mesajı
+  start-message: "Parkur başladı! İyi şanslar!"
+  # Checkpoint mesajı
+  checkpoint-message: "Checkpoint kaydedildi!"
+
+arena:
+  # Arena lokasyonları
+  locations:
+    - world: "world"
+      x: 100
+      y: 70
+      z: 100
+    - world: "world" 
+      x: -100
+      y: 70
+      z: -100
+
+game:
+  # Oyun ayarları
+  loot-time: 30
+  teams: 9
+  players-per-team: 2

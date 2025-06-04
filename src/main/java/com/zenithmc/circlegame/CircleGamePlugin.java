@@ -10,13 +10,13 @@ public class CircleGamePlugin extends JavaPlugin {
     
     @Override
     public void onEnable() {
-        getLogger().info("ZenithMC Circle Game Plugin yüklendi!");
+        getLogger().info("ZenithMC Circle Game Plugin (Lobi Sistemi ile) yüklendi!");
         
         // Config dosyasını oluştur
         saveDefaultConfig();
         configManager = new ConfigManager(this);
         
-        // Game Manager'ı başlat
+        // Game Manager'ı başlat (lobi sistemi dahil)
         gameManager = new GameManager(this);
         
         // Komutları kaydet
@@ -25,7 +25,8 @@ public class CircleGamePlugin extends JavaPlugin {
         // Event listener'ları kaydet
         getServer().getPluginManager().registerEvents(new GameListener(gameManager), this);
         
-        getLogger().info("Circle Game sistemi aktif!");
+        getLogger().info("Circle Game sistemi aktif! Oyuncular /cg lobby ile katılabilir!");
+        getLogger().info("Minimum oyuncu sayısı: " + configManager.getMinPlayers());
     }
     
     @Override
